@@ -29,7 +29,7 @@ except Exception as e:
 # Page Config & Styling
 # =========================
 st.set_page_config(
-    page_title="CRPD Article Explorer by the IDPP Team",
+    page_title="CRPD Article Explorer by IDPP Team",
     page_icon="⚖️",
     layout="wide",
     initial_sidebar_state="expanded",
