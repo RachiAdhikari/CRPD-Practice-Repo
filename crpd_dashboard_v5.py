@@ -238,6 +238,24 @@ with tab_overview:
         st.plotly_chart(px.line(yearly, x="year", y="count", markers=True), use_container_width=True)
         st.caption("📈 Number of reports submitted each year.")
 
+# === GLOBAL MODEL SHIFT (new)
+mt_global = model_shift_table(df)
+if len(mt_global):
+    by_year_global = (
+        mt_global.groupby("year")[["medical","rights"]]
+        .sum().reset_index().sort_values("year")
+    )
+    st.plotly_chart(
+        px.area(
+            by_year_global,
+            x="year",
+            y=["medical","rights"],
+            title="Global Shift in Disability Framing (Medical vs. Rights-Based Language)"
+        ),
+        use_container_width=True,
+    )
+    st.caption("⚖️ This area chart shows how the use of medical vs. rights-based language has evolved globally over time.")
+
 # === CRPD ARTICLES ===
 with tab_articles:
     st.subheader("CRPD Article Coverage")
