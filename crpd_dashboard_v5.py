@@ -354,3 +354,17 @@ st.download_button(
     file_name="CRPD_filtered_export.csv",
     mime="text/csv"
 )
+
+# -------------------------
+# Footer / Attribution
+# -------------------------
+st.markdown("---")
+st.markdown(
+    """
+    <div style='text-align: center; color: #888; font-size: 0.9em;'>
+        Dashboard developed by the <b>Institute on Disability and Public Policy (IDPP)</b> research team.<br>
+        © 2025 American University
+    </div>
+    """,
+    unsafe_allow_html=True
+)
