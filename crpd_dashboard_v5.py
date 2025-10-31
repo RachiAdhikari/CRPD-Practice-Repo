@@ -195,7 +195,7 @@ df = filter_df(df_all, region, country, doc_types, year_range)
 # -------------------------
 # Header & KPIs
 # -------------------------
-st.title("🌍 CRPD Global Implementation Dashboard")
+st.title("🌍 CRPD Disability Data Dashboard")
 st.caption("Explore how countries implement the UN Convention on the Rights of Persons with Disabilities (CRPD) across all report types.")
 
 k1, k2, k3, k4 = st.columns(4)
