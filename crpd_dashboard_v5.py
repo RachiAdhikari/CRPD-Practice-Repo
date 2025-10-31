@@ -19,7 +19,7 @@ from collections import Counter
 # Page Configuration
 # -------------------------
 st.set_page_config(
-    page_title="CRPD Disability Rights Data Dashboard",
+    page_title="CRPD Disabililty Rights Data Dashboard",
     page_icon="🌍",
     layout="wide",
 )
